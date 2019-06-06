@@ -10,12 +10,12 @@ namespace ConsoleApp2
     public abstract class Handler
     {
         public Handler Successor { set; get; }
-        public abstract void HandleRequest(Coin coin, int sum);
+        public abstract void HandleRequest(Coin coin, ref int sum);
     }
 
     public class FiveCopecksHandler : Handler
     {
-        public override void HandleRequest(Coin coin, int sum)
+        public override void HandleRequest(Coin coin, ref int sum)
         {
             if (Abs(coin.Diameter - 10) < 1 && Abs(coin.Weight - 15) < 2)
             {
@@ -24,14 +24,16 @@ namespace ConsoleApp2
             }
             else if (Successor != null)
             {
-                Console.WriteLine($"Монета данного номинала не принята");
-                Successor.HandleRequest(coin, sum);
+               
+                Successor.HandleRequest(coin, ref sum);
             }
+            else
+                Console.WriteLine($"Монета данного номинала не принята");
         }
     }
     public class TenCopecksHandler : Handler
     {
-        public override void HandleRequest(Coin coin, int sum)
+        public override void HandleRequest(Coin coin, ref int sum)
         {
             if (Abs(coin.Diameter - 20) < 1 && Abs(coin.Weight - 30) < 2)
             {
@@ -40,15 +42,17 @@ namespace ConsoleApp2
             }
             else if (Successor != null)
             {
-                Console.WriteLine($"Монета данного номинала не принята");
-                Successor.HandleRequest(coin, sum);
+                
+                Successor.HandleRequest(coin, ref sum);
             }
+            else
+                Console.WriteLine($"Монета данного номинала не принята");
         }
     }
 
     public class TwentyFiveCopecksHandler : Handler
     {
-        public override void HandleRequest(Coin coin, int sum)
+        public override void HandleRequest(Coin coin, ref int sum)
         {
             if (Abs(coin.Diameter - 30) < 1 && Abs(coin.Weight - 45) < 2)
             {
@@ -57,15 +61,17 @@ namespace ConsoleApp2
             }
             else if (Successor != null)
             {
-                Console.WriteLine($"Монета данного номинала не принята");
-                Successor.HandleRequest(coin, sum);
+                
+                Successor.HandleRequest(coin, ref sum);
             }
+            else
+                Console.WriteLine($"Монета данного номинала не принята");
         }
     }
 
     public class FiftyCopecksHandler : Handler
     {
-        public override void HandleRequest(Coin coin, int sum)
+        public override void HandleRequest(Coin coin, ref int sum)
         {
             if (Abs(coin.Diameter - 40) < 1 && Abs(coin.Weight - 50) < 2)
             {
@@ -74,9 +80,11 @@ namespace ConsoleApp2
             }
             else if (Successor != null)
             {
-                Console.WriteLine($"Монета данного номинала не принята");
-                Successor.HandleRequest(coin, sum);
+               
+                Successor.HandleRequest(coin, ref sum);
             }
+            else
+                Console.WriteLine($"Монета данного номинала не принята");
         }
     }
 

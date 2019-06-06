@@ -12,3 +12,9 @@ C:\Users\Nadya\Desktop\Новая папка (2)\ChainOfResponsibilityPattern\Co
 C:\Users\Nadya\Desktop\Новая папка (2)\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csproj.CoreCompileInputs.cache
 C:\Users\Nadya\Desktop\Новая папка (2)\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
 C:\Users\Nadya\Desktop\Новая папка (2)\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe.config
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.exe
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\bin\Debug\ConsoleApp2.pdb
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.csprojResolveAssemblyReference.cache
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.exe
+C:\Users\PKO\Desktop\Новая папка\ChainOfResponsibilityPattern\ConsoleApp2\ConsoleApp2\obj\Debug\ConsoleApp2.pdb

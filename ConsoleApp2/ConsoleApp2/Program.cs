@@ -20,13 +20,13 @@ namespace ConsoleApp2
             TenCopecks.Successor = TwentyFiveCopecks;
             TwentyFiveCopecks.Successor = FiftyCopecks;
 
+            int s = 0;
+            FiveCopecks.HandleRequest(new Coin(10,15), ref s);
+            FiveCopecks.HandleRequest(new Coin(20, 30), ref s);
+            FiveCopecks.HandleRequest(new Coin(30, 45), ref s);
+            FiveCopecks.HandleRequest(new Coin(20, 40), ref s);
 
-            FiveCopecks.HandleRequest(new Coin(10,15), 0);
-            TenCopecks.HandleRequest(new Coin(20,30), 0);
-            TwentyFiveCopecks.HandleRequest(new Coin(30,45), 0);
-            TenCopecks.HandleRequest(new Coin(20,40), 0);
-            FiftyCopecks.HandleRequest(new Coin(40,50), 0);
-
+            Console.WriteLine($"Итоговая сумма {s}");
             Console.ReadKey();
         }
     }
